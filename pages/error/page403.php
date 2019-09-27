@@ -1,0 +1,3 @@
+<?php
+
+$helper->Block403();

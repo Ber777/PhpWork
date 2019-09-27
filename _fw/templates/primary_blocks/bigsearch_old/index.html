@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Заголовок</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css">
+	
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+
+	<!--<script src="libs/modernizr/modernizr.js"></script>-->
+	<style>
+	table{
+	  border-collapse:collapse;
+	}
+	</style>
+
+</head>
+
+<body>
+
+	
+  <div id="multi-derevo">
+  <h4>Дерево элемента</h4>
+  <!--<a href="#add" class="popup">Добавить</a>
+  <a href="#delete" class="popup">Добавить1</a>-->
+
+    <div class="buttons">
+    <a href="#add" class="add-more google-button">Добавить</a>
+    <a href="#delete" class="delete-more google-button">Удалить</a>
+    </div>
+
+    <div class="hidden">
+    <form id="add">
+    <input type="text" name="name" placeholder="Название" required/><br>
+    <input class="button-add-user" type="submit" name="submit" value="Создать"/>
+    </form>
+ 	
+    </div></div>
+
+<input type="button" onclick="history.back();" value="Назад"/>
+	<!--<img src = "../../images/фон.jpg">-->
+	<h1 align="center">Панель администратора</h1>
+	
+	<table cellspacing="10">
+	<tr align="center"><th>Управление пользователями</th><th>Управление группами</th></tr>
+	<tr><td><a href="#user-search" class="popup">Найти пользователя в системе</a></td>
+	    <td><a href="#user-search" class="popup">Найти группу в системе</a></td></tr>
+	<tr><td><a href="#add-user-bd" class="popup">Создать пользователя в БД</a></td>
+	    <td><a href="#add-user-bd" class="popup">Создать группу в БД</a></td></tr>
+	<tr><td><a href="#add-userrole-bd" class="popup">Создать роль пользователя в БД</a></td></tr>
+	<tr><td><a href="#add-userprofile-bd" class="popup">Создать профиль пользователю в БД</a></td></tr>
+	<tr><td><a href="#add-user-group" class="popup">Добавить пользователя в группу</a></td></tr>
+	<tr><td><a href="#delete-user-bd" class="popup">Удалить пользователя</a></td></tr>
+	</table>
+
+	<!-- Здесь пишем код -->
+	
+	<div class="hidden">
+	  <form id="add-user-bd">
+            <input type="text" name="username" placeholder="Имя" required/><br>
+	    <input type="text" name="user_id_system" placeholder="Логин" required/><br>
+	    <input class="button-add-user" type="submit" name="submit" value="Создать пользователя"/>
+	    <!--<button>Создать пользователя</button>-->
+	  </form>
+	
+	  <form id="add-userrole-bd">
+	    <input type="text" name="user_id_system" placeholder="Логин" required/><br>
+	    <input type="text" name="password" placeholder="Пароль" required/><br>
+	    <input class="button-add-userrole" type="submit" name="submit" value="Создать роль пользователю"/>
+	    <!--<button>Создать роль пользователю</button>-->
+	  </form>
+
+	  <form id="add-userprofile-bd">
+	    <input type="text" name="username" placeholder="Имя пользователя" required/><br>
+	    <input class="button-add-userprofile" type="submit" name="submit" value="Создать профиль пользователю"/>
+	    <!--<button>Создать роль пользователю</button>-->
+	  </form>
+
+          <form id="user-search">
+	    <input type="text" name="username" placeholder="Иванов И.И." required/><br>
+	    <input class="button-all-users" type="submit" name="submit" value="Найти пользователя в системе"/>
+	    <!--<button>Создать роль пользователю</button>-->
+	  </form>
+
+	  <form id="delete-user-bd">
+            <input type="text" name="username" placeholder="Имя" required/><br>
+	    <input class="button-delete-user" type="submit" name="submit" value="Удалить пользователя"/>
+	    <!--<button>Создать пользователя</button>-->
+	  </form>
+
+	  <form id="delete-user-bd">
+            <input type="text" name="username" placeholder="Имя" required/><br>
+	    <input type="text" name="group" placeholder="Группа" required/><br>
+	    <input class="button-add-user-group" type="submit" name="submit" value="Добавить пользователя в группу"/>
+	    <!--<button>Создать пользователя</button>-->
+	  </form>
+
+	</div>
+
+	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<script src="libs/magnific-popup/jquery.magnific-popup.min.js"></script>
+	<script src="js/common.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style_for_db.css">
+        <script type="text/javascript" src="js/jquery-2.2.2.min.js"></script>
+        <script type="text/javascript" src="js/summary.js"></script>
+	
+</body>
+</html>

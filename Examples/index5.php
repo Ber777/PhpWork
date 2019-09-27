@@ -1,0 +1,4 @@
+<?php
+	echo HEDDDDDD;
+	exit;
+?>

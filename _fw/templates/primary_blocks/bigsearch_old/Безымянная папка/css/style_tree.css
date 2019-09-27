@@ -1,0 +1,134 @@
+#terms-of-service {
+font-family: Arial, Tahoma, sans-serif;
+ /*margin: 2em;*/
+font-size: 62.5%;
+margin-top: 10%;
+}
+.buttons , .more {
+  margin: 2em 2em 0px 0px;
+}
+.themodal-overlay  p {
+ font-size: 1.2em;
+}
+#multi-derevo a {
+ color: black;
+ text-decoration: none;
+ outline: none;
+} 
+#multi-derevo a:hover {
+ text-decoration: underline;
+}
+#multi-derevo a:active, #multi-derevo  a:focus {
+ color: #666;
+ background-color: #f4f4f4;
+}
+#multi-derevo a.current {
+ color: black;
+ font-weight: bold;
+ background-color: #B9D3EE;
+}
+
+
+#multi-derevo {
+/*  width: 220px; 
+ border: solid; 
+ border-color: silver gray gray silver; */
+ border-width: 2px;
+ padding: 1em 0 1em 0; /* нижний отступ */
+ font-size: 1.5em; 
+}
+#multi-derevo span  { /* обертка пункта */
+text-decoration: none;
+display: block; /* растянем до правого края блока */
+margin: 0 0 0 1.2em;     
+background-color: transparent;
+border: solid silver; /* цвет линий */ 
+border-width: 0 0 1px 1px; /* границы: низ и лево */
+}
+#multi-derevo span a {/* тест элемента дерева */
+display: block; /* HERE */
+position: relative;
+top: .95em; /* смещаем узел на середину линии */
+background-color: #fff; /* закраска в цвет фона обязательна иначе будет видно линию */
+margin: 0 0 .2em .7em; /* делаем промежуток между узлами, отодвигаем левее  */
+padding: 0 0.3em; /* небольшой отступ от линии */
+}
+#multi-derevo h4 {/* заголовок дерева */
+ font-size: 1em;
+ font-weight: bold;
+ margin: 0;
+ padding: 0 .25em;
+ border-bottom: 1px solid silver;
+}
+#multi-derevo h4 a {
+ display: block;
+}
+#multi-derevo ul, #multi-derevo li {
+ list-style-image:none;
+ list-style-position:outside;
+ list-style-type:none;
+ margin:0;
+ padding:0;
+ min-height: 0;
+}
+#multi-derevo ul li {
+line-height: 1.2em;
+float: none;
+}
+#multi-derevo ul li ul {
+  display: none; /* узлы свернуты */
+}
+#multi-derevo ul li ul li {
+  margin: 0 0 0 1.2em;
+  border-left: 1px solid silver; /* цвет вертикальной линии между узлами */
+}
+#multi-derevo li.last {/* последний узел, соединительную линию к след. узлу убираем */
+  border: none; 
+}
+#multi-derevo .marker { /* маркер раскрытия списка в закрытом состоянии */
+ border-color: transparent transparent transparent gray;
+ border-style: solid;
+ border-width: .25em 0 .25em .5em; 
+ margin: .35em .25em 0 0;
+ float: left;
+ width: 0px;
+ height: 0px;
+ line-height: 0px;
+}
+#multi-derevo .marker.open {/* маркер раскрытия списка в открытом состоянии */
+ border-color: gray transparent transparent transparent;
+ border-width: .5em .25em 0 .25em; 
+}
+/* IE 6 Fixup */
+* html #multi-derevo * { height: 1%;}
+* html .marker { border-style: dotted dotted dotted solid; }
+* html .marker.open { border-style: solid dotted dotted dotted; }
+
+a.google-button {
+display: inline-block;
+font-family: arial,sans-serif;
+font-size: 12px;
+font-weight: bold;
+color: rgb(68,68,68);
+text-decoration: none;
+user-select: none;
+padding: .2em 1.2em;
+outline: none;
+border: 1px solid rgba(0,0,0,.1);
+border-radius: 2px;
+background: rgb(245,245,245) linear-gradient(#B9D3EE, #B9D3EE);
+transition: all .218s ease 0s;
+margin-right: 1em;
+}
+a.google-button:hover {
+color: rgb(24,24,24);
+border: 1px solid rgb(198,198,198);
+background: #f7f7f7 linear-gradient(#C6E2FF, #C6E2FF);
+box-shadow: 0 1px 2px rgba(0,0,0,.1);
+}
+a.google-button:active {
+color: rgb(51,51,51);
+border: 1px solid rgb(204,204,204);
+background: rgb(238,238,238) linear-gradient(rgb(238,238,238), rgb(224,224,224));
+box-shadow: 0 1px 2px rgba(0,0,0,.1) inset;
+}

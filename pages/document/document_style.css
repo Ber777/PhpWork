@@ -1,0 +1,44 @@
+/********************************************** ТАБЛИЦА АТТРИБУТОВ **************************************************/
+
+#table-attributes {
+    margin: auto;
+    width: 70%;
+    border-collapse: collapse;
+}
+
+#table-attributes td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#table-attributes tr:hover {
+    background-color: #ededed;
+}
+
+/*********************** СПИСОК ДЕСКРИПТОРОВ *************************************/
+
+#list-tags li {
+    display: inline-block;
+    float: none;
+}
+
+/* АДМИН ПАНЕЛЬ В ПАСПОРТЕ */
+
+#admin_panel_object_passport {
+    padding: 20px;
+}
+
+#admin_panel_object_passport > li {
+    display: inline-block;
+    float: none;
+    padding-left: 20px;
+}
+
+#admin_panel_object_passport img {
+    margin-right: 5px;
+}
+
+/*.list-templates > li:nth-child(3n+1) {
+    clear: both;
+}*/
+

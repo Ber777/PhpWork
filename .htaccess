@@ -1,0 +1,17 @@
+AuthType Basic
+#AuthType Digest
+AuthName Private
+AuthUserFile /var/www/html/administration/.htpasswd
+AuthGroupFile /var/www/html/administration/.htgroup
+
+Require group admins readers writers
+#Require valid-user nobody2 user vinogradova chernen terekhov gapanuk adminkv xgb_nir ostrikov chermv
+
+RewriteEngine on
+#RewriteBase /
+#RewriteCond %{REQUEST_FILENAME} !^favicon\.ico
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+#RewriteRule ^(.*)$ index.php [L,QSA] 
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]

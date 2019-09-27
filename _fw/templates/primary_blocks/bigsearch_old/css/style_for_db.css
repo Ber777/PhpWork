@@ -1,0 +1,209 @@
+    /* общий стиль */
+  body {font-family: Arial, Tahoma, sans-serif; margin: 2em; font-size: 62.5%;}
+  p {
+   font-size: 1.2em;
+  }
+  a {
+   color: black;
+   text-decoration: none;
+   outline: none;
+  }
+  /*a:link {
+   color: #0066cc; 
+  }
+  a:visited {color: #00cc63; }*/ 
+  a:hover {
+   text-decoration: underline;
+  }
+  a:active, a:focus {
+   color: #666;
+   background-color: #f4f4f4;
+  }
+  a.current {
+   color: black;
+   font-weight: bold;
+   background-color: #CDC9C9;
+  }
+
+
+  #multi-derevo {
+/*   width: 220px; 
+   border: solid; 
+   border-color: silver gray gray silver;*/
+   border-width: 2px;
+   padding: 0 0 1em 0; /* нижний отступ */
+   font-size: 1.3em; 
+  }
+   span  { /* обертка пункта */
+     text-decoration: none;
+     display: block; /* растянем до правого края блока */
+     margin: 0 0 0 1.2em;     
+     background-color: transparent;
+     border: solid silver; /* цвет линий */ 
+     border-width: 0 0 1px 1px; /* границы: низ и лево */
+   }
+    span  a {/* тест элемента дерева */
+      display: block; /* HERE */
+      position: relative;
+      top: .95em; /* смещаем узел на середину линии */
+      background-color: #fff; /* закраска в цвет фона обязательна иначе будет видно линию */
+      margin: 0 0 .2em .7em; /* делаем промежуток между узлами, отодвигаем левее  */
+      padding: 0 0.3em; /* небольшой отступ от линии */
+     }
+    h4 {/* заголовок дерева */
+     font-size: 1em;
+     font-weight: bold;
+     margin: 0;
+     padding: 0 .25em;
+     border-bottom: 1px solid silver;
+    }
+   h4 a {
+     display: block;
+   }
+   ul, li {
+     list-style-image:none;
+     list-style-position:outside;
+     list-style-type:none;
+     margin:0;
+     padding:0;
+   }
+     ul li {
+      line-height: 1.2em;
+     }
+      ul li ul {
+        display: none; /* узлы свернуты */
+      }
+        ul li ul li {
+         margin: 0 0 0 1.2em;
+         border-left: 1px solid silver; /* цвет вертикальной линии между узлами */
+        }
+        li.last {/* последний узел, соединительную линию к след. узлу убираем */
+         border: none; 
+        }
+   .marker { /* маркер раскрытия списка в закрытом состоянии */
+     border-color: transparent transparent transparent gray;
+     border-style: solid;
+     border-width: .25em 0 .25em .5em; 
+     margin: .35em .25em 0 0;
+     float: left;
+     width: 0px;
+     height: 0px;
+     line-height: 0px;
+   }
+   .marker.open {/* маркер раскрытия списка в открытом состоянии */
+     border-color: gray transparent transparent transparent;
+     border-width: .5em .25em 0 .25em; 
+   }
+  /* IE 6 Fixup */
+  * html #multi-derevo * { height: 1%;}
+  * html .marker { border-style: dotted dotted dotted solid; }
+  * html .marker.open { border-style: solid dotted dotted dotted; }
+
+a.google-button {
+display: inline-block;
+font-family: arial,sans-serif;
+font-size: 11px;
+font-weight: bold;
+color: rgb(68,68,68);
+text-decoration: none;
+user-select: none;
+padding: .2em 1.2em;
+outline: none;
+border: 1px solid rgba(0,0,0,.1);
+border-radius: 2px;
+background: rgb(245,245,245) linear-gradient(#f4f4f4, #f1f1f1);
+transition: all .218s ease 0s;
+}
+a.google-button:hover {
+color: rgb(24,24,24);
+border: 1px solid rgb(198,198,198);
+background: #f7f7f7 linear-gradient(#f7f7f7, #f1f1f1);
+box-shadow: 0 1px 2px rgba(0,0,0,.1);
+}
+a.google-button:active {
+color: rgb(51,51,51);
+border: 1px solid rgb(204,204,204);
+background: rgb(238,238,238) linear-gradient(rgb(238,238,238), rgb(224,224,224));
+box-shadow: 0 1px 2px rgba(0,0,0,.1) inset;
+}
+
+
+
+
+/*       Modal Table        */
+
+
+
+
+
+
+.modal_div {
+width: 300px;
+height: 100px; /* Рaзмеры дoлжны быть фиксирoвaны */
+border-radius: 5px;
+border: 3px #000 solid;
+background: #fff;
+position: fixed; /* чтoбы oкнo былo в видимoй зoне в любoм месте */
+top: 45%; /* oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт */
+left: 50%; /* пoлoвинa экрaнa слевa */
+margin-top: -150px;
+margin-left: -150px; /* тут вся мaгия центрoвки css, oтступaем влевo и вверх минус пoлoвину ширины и высoты сooтветственнo =) */
+display: none; /* в oбычнoм сoстoянии oкнa не дoлжнo быть */
+opacity: 0; /* пoлнoстью прoзрaчнo для aнимирoвaния */
+z-index: 5; /* oкнo дoлжнo быть нaибoлее бoльшем слoе */
+padding: 20px 10px;
+}
+/* Кнoпкa зaкрыть для тех ктo в тaнке) */
+.modal_div .modal_close {
+color: aliceblue;
+top: -14px;
+right: -14px;
+width: 20px;
+height: 20px;
+position: absolute;
+padding: 0;
+border: 2px solid #ccc;
+-webkit-border-radius: 15px;
+-moz-border-radius: 15px;
+-ms-border-radius: 15px;
+-o-border-radius: 15px;
+background-color: rgba(61, 61, 61, 90);
+-webkit-box-shadow: 0px 0px 10px #000;
+-moz-box-shadow: 0px 0px 10px #111;
+box-shadow: 0px 0px 0px #000;
+text-align: center;
+text-decoration: none;
+font: 13px/20px 'Tahoma', Arial, sans-serif;
+font-weight: bold;
+-webkit-transition: all ease .8s;
+-moz-transition: all ease .8s;
+-ms-transition: all ease .8s;
+-o-transition: all ease .8s;
+transition: all ease .8s;
+cursor: pointer;
+display: block;
+}
+
+.close:hover {
+background-color: rgba(20, 20, 0, 0.8);
+-webkit-transform: rotate(360deg);
+-moz-transform: rotate(360deg);
+-ms-transform: rotate(360deg);
+-o-transform: rotate(360deg);
+transform: rotate(360deg);
+}
+/* Пoдлoжкa */
+#overlay {
+z-index:3; /* пoдлoжкa дoлжнa быть выше слoев элементoв сaйтa, нo ниже слoя мoдaльнoгo oкнa */
+position:fixed; /* всегдa перекрывaет весь сaйт */
+background-color:#000; /* чернaя */
+opacity:0.8; /* нo немнoгo прoзрaчнa */
+-moz-opacity:0.8; /* фикс прозрачности для старых браузеров */
+filter:alpha(opacity=80);
+width:100%;
+height:100%; /* рaзмерoм вo весь экрaн */
+top:0; /* сверху и слевa 0, oбязaтельные свoйствa! */
+left:0;
+cursor:pointer;
+display:none; /* в oбычнoм сoстoянии её нет) */
+}

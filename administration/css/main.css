@@ -1,0 +1,374 @@
+/**::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	
+}
+body input:required:valid,
+body textarea:required:valid {
+	
+}*/
+
+html.js .loader {
+	background: none repeat scroll 0 0 #ffffff;
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 9999;
+}
+html.js .loader_inner {
+	background-image: url("../img/preloader.gif");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: #fff;
+	height: 60px;
+	width: 60px;
+	margin-top: -30px;
+	margin-left: -30px;
+	left: 50%;
+	top: 50%;
+	position: absolute;
+}
+
+body {
+	font-family: "RobotoRegular", sans-serif;
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	background-image: url("../../images/фон_админ.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+.hidden {
+	display: none;
+}
+
+h1{
+	color: #00BFFF;
+}
+
+h3{
+	font-size: 18px;
+	color: #00BFFF;
+	margin: -1px;
+}
+
+h4{
+	font-size: 16px;
+	color: #00BFFF;
+	margin-bottom: 5px;
+}
+
+	/*<style>
+	table{
+	  border-collapse:collapse;
+	}
+
+	</style>*/
+
+/*общие стили для всех кнопок*/
+/*color:#00c6ff;#8B4513 #CD853F*/
+a.popup{
+ color:#FFF;
+ background-color: #4682B4;
+ padding: 15px 20px;
+ width:250px;
+ text-decoration:none;
+ text-align:center;
+ margin:15px 180px;
+ display: block;
+ background-image: linear-gradient(to left,transparent,transparent 50%,#F0FFFF 50%,#F0FFFF);
+ background-position: 100% 0;
+ background-size: 200% 100%;
+ transition: all .25s ease-in;
+ font: 400 15px tahoma;
+ border: 1px solid #FFF;
+ border-radius: 10px;
+}
+a.popup:hover {
+background-position: 0 0;
+border: 1px solid #00BFFF;
+color: #4682B4;
+}
+
+div.popup {
+	position:fixed;
+	
+}
+/*For change profile */
+b.popup{
+ color:#FFF;
+ background-color: #4682B4;
+ padding: 15px 20px;
+ width:250px;
+ text-decoration:none;
+ text-align:center;
+ margin:22px 180px;
+ margin-left: 330px;
+ display: block;
+ background-image: linear-gradient(to left,transparent,transparent 50%,#F0FFFF 50%,#F0FFFF);
+ background-position: 100% 0;
+ background-size: 200% 100%;
+ transition: all .25s ease-in;
+ font: 400 15px tahoma;
+ border: 1px solid #FFF;
+ border-radius: 10px;
+}
+b.popup:hover {
+background-position: 0 0;
+border: 1px solid #00BFFF;
+color: #4682B4;
+}
+
+c.popup{
+ color:#FFF;
+ background-color: #4682B4;
+ padding: 5px 10px;
+ width: 250px;
+ text-decoration:none;
+ text-align:center;
+ margin:15px 0px;
+ display: block;
+ background-image: linear-gradient(to left,transparent,transparent 50%,#F0FFFF 50%,#F0FFFF);
+ background-position: 100% 0;
+ background-size: 200% 100%;
+ transition: all .25s ease-in;
+ font: 400 15px tahoma;
+ border: 1px solid #FFF;
+ border-radius: 10px;
+}
+c.popup:hover {
+background-position: 0 0;
+border: 1px solid #00BFFF;
+color: #4682B4;
+}
+
+/*a {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 15px 25px;
+  padding: 15px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  transition: 0.4s ease-in-out;
+}
+ 
+.popup a {
+  border-radius: 10px;
+  background: #E8CCB5;
+  color: #B05151;
+  padding: 15px 30px;
+  position: relative;
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+}
+.popup a:before, .popup a:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: calc(50% - 5px);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #F58262;
+  box-shadow: inset 0 -2px 0 #B05151;
+  opacity: 0;
+  transition: .5s ease-in-out;
+}
+.popup a:before {left: 13px;}
+.popup a:after {right: 13px;}
+.popup a:hover:before, .popup a:hover:after {opacity: 1;}*/
+
+select{
+	min-width: 280px;
+}
+
+#set-theme-profile {
+	padding: 50px 20px;
+	background-color: #008080;
+	min-width: 386px;
+	margin-left: 419px;
+	position: relative;
+}
+
+#add-user-bd {
+	padding: 50px 20px;
+	background-color: #008080;
+	max-width: 320px;
+	margin: auto;
+	position: relative;
+}
+
+#add-user-bd input {
+	width: 200px;
+	margin-bottom: 10px;
+}
+
+.button-add-user {
+	color: #fff;
+	background-color: #2ca8c6;
+	cursor: pointer;
+}
+
+#add-userrole-bd {
+	padding: 50px 20px;
+	background-color: #00008B;
+	max-width: 320px;
+	margin: auto;
+	position: relative;
+}
+
+#add-userrole-bd input {
+	width: 280px;
+	margin-bottom: 10px;
+}
+
+.button-add-userrole {
+	color: #fff;
+	background-color: #00BFFF;
+	cursor: pointer;
+	width: 3000px;
+	margin-top: 20px;
+}
+
+#add-userprofile-bd {
+	padding: 50px 20px;
+	background-color: #ff1493;
+	max-width: 350px;
+	margin: auto;
+	position: relative;
+}
+
+#add-userprofile-bd input {
+	width: 300px;
+	margin-bottom: 10px;
+}
+
+.button-add-userprofile {
+	color: #fff;
+	background-color: #c71585;
+	cursor: pointer;
+}
+
+#user-search {
+	padding: 50px 20px;
+	background-color: #00008B;
+	max-width: 320px;
+	margin: auto;
+	position: relative;
+}
+
+#user-search input {
+	width: 280px;
+	
+}
+
+.button-all-users {
+	margin-top: 10px;
+}
+
+#group-search {
+	padding: 50px 20px;
+	background-color: #00008B;
+	max-width: 320px;
+	margin: auto;
+	position: relative;
+}
+
+#add-user-group {
+	padding: 50px 20px;
+	background-color: #00008B;
+	max-width: 320px;
+	margin: auto;
+	position: relative;
+}
+
+.button-add-user-group {
+	color: #fff;
+	background-color: #00BFFF;
+	cursor: pointer;
+	margin-top: 20px;
+	width: 280px;
+}
+
+#delete-user-bd {
+	padding: 50px 20px;
+	background-color: #00008B;
+	max-width: 320px;
+
+	margin: auto;
+	position: relative;
+}
+
+.button-delete-user {
+	color: #fff;
+	background-color: #00BFFF;
+	cursor: pointer;
+	width: 280px;
+	margin-top: 20px;
+}
+
+#add-group {
+	padding: 50px 20px;
+	background-color: #008080;
+	max-width: 320px;
+	margin: auto;
+	position: relative;
+}
+
+#add-group input {
+	width: 200px;
+	margin-bottom: 10px;
+}
+
+.button-add-user {
+	color: #fff;
+	background-color: #2ca8c6;
+	cursor: pointer;
+}
+
+#del-group {
+	padding: 50px 20px;
+	background-color: #00008B;
+	max-width: 320px;
+	margin: auto;
+	position: relative;
+}
+
+#del-user-group {
+	padding: 50px 20px;
+	background-color: #00008B;
+	max-width: 320px;
+	margin: auto;
+	position: relative;
+}
+/*.button-add-user-group {
+	color: #fff;
+	background-color: #00BFFF;
+	cursor: pointer;
+	margin-top: 20px;
+	width: 280px;
+}*/

@@ -1,0 +1,12 @@
+#content {
+    width: 80%;
+}
+
+.admin_panel_object {
+    /*width: 170px;*/
+    margin-top: -32px;
+}
+
+ul#list-file-in > li > a {
+    padding-right: 135px;
+}

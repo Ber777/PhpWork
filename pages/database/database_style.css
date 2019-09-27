@@ -1,0 +1,63 @@
+.list-link-db > a {
+    padding-right: 85px;
+}
+
+.click-button > span {
+    margin-top: 7px;
+    margin-left: 3px;
+    display: inline-block;
+}
+
+.admin-panel-db {
+    overflow: hidden;
+}
+
+.admin-panel-db > li {
+    width: 100%;
+    text-align: center;
+}
+
+
+#list-child-catalog {
+    min-height: 85px;
+    padding-bottom: 20px;
+}
+
+#list-child-catalog .admin_panel_object {
+    /*width: 160px;*/
+}
+
+#list-child-catalog .admin_panel_object li {
+    /*margin-left: 10px;*/
+}
+
+#list-child-catalog > li > a {
+    background: url('/images/folder-small.png') no-repeat;
+    background-size: 35px;
+    padding: 7px 150px 3px 40px;
+}
+
+#list-file-in-database > li > .nav-page:before {
+    content: "Местоположение: ";
+}
+
+#list-file-in-database > li > .nav-page > ul > li:hover {
+    text-decoration: underline;
+}
+
+#list-file-in-database > li > .nav-page ul {
+    display: block;
+    width: 100%;
+}
+
+#list-file-in-database > li > .nav-page ul li {
+    float: left;
+}
+
+#list-file-in .admin_panel_object {
+    /*width: 170px;*/
+}
+
+#list-file-in {
+    margin-bottom: 20px;
+}

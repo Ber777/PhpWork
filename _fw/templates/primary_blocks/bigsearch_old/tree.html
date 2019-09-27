@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Дерево с подгрузкой</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/style_for_db.css">
+  <script type="text/javascript" src="js/jquery-2.2.2.min.js"></script>
+  <script type="text/javascript" src="js/tree_load.js"></script>
+<script type="text/javascript" src="js/modal.js"></script>
+<script type="text/javascript" src="js/edit_tree.js"></script>
+</head>
+<body>
+  <a id="showdb" class="google-button">Показать базу</a>
+  <a href="#add" class="open_modal google-button">Добавить</a>
+  <a href="#delete" class="open_modal google-button">Удалить</a>
+
+  <div id="multi-derevo"></div>
+
+
+  <div id="add" class="modal_div">
+    <span class="modal_close">X</span>
+    <form action="" method="post">
+      <h2>Добавление каталога</h2>
+      <p>
+        <br>
+        <input placeholder="Введите название" id="for-add" type="text" name="your-name" value="" size="40">
+      </p>
+      <p style="text-align: center; padding-bottom: 10px;">
+        <a href="#" class="google-button modal_close_button" id="add">Добавить</a>
+      </p>
+    </form>
+  </div>
+  <div id="delete" class="modal_div"> <!-- скрытый див с уникaльным id = modal1 -->
+    <span class="modal_close">X</span>
+    <p style="text-align: center; padding-bottom: 10px;">Точно хотите удалить?</p>
+    <p style="text-align: center; padding-bottom: 10px;">
+      <a href="#" class="google-button modal_close_button" id="delete">Да</a>
+      <a href="#" class="google-button modal_close_button" id="cancel">Отмена</a>
+    </p>
+  </div>
+  <div id="overlay"></div>
+</body>
+</html>

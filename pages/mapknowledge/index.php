@@ -1,0 +1,3 @@
+<?
+$helper->BlockSearch();
+$helper->HideFormSearch();
